@@ -1,0 +1,304 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: rgb(229, 229, 229);
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-top: 50px;
+    margin-right: 140px;
+}
+.header-options {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.header-options li {
+    padding-right: 48px;
+}
+.header-button {
+    padding: 10px 15px;
+    background-color: rgb(100, 123, 100);
+    border-color: transparent;
+    color: rgb(254, 254, 254);
+    border-radius: 3px;
+}
+li a {
+    text-decoration: none;
+    line-height: 20px;
+    color: rgb(51, 51, 51)
+}
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 180px;
+    margin-right: 200px;
+}
+.main-left {
+    align-self: center;
+    width: 495px
+}
+.main-content-header {
+    line-height: 116%;
+    font-size: 48px;
+}
+.main-content-content {
+    line-height: 132%;
+    font-size: 20px;
+    text-align: left;
+}
+.main-right {
+    margin-left: 238px;
+}
+.main-content-button {
+    width: 350px;
+    height: 73px;
+    text-align: left;
+    padding-left: 29px;
+    text-transform: uppercase;
+    background-color: rgb(100, 123, 100);
+    border-color: transparent;
+    color: rgb(254, 254, 254);
+    border-radius: 2px;
+    background-image: url(images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 306px;
+}
+.second-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 109px;
+    margin-top: 141px;
+
+}
+.second-content-left {
+    margin-left: 140px;
+    width: 412px;
+}
+.second-fade {
+    background-image: linear-gradient(rgb(255, 229, 210),rgb(229, 229, 229));
+}
+.second-content-header {
+    color:rgb(243, 181, 98);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.second-content-title {
+    color: rgb(100, 123, 100);
+    font-size: 41px;
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+
+.second-content-content {
+    font-size: 16px;
+    line-height: 132%;
+    letter-spacing: 4%;
+    width: 412px;
+}
+.second-content-button {
+    width: 350px;
+    height: 73px;
+    text-align: left;
+    padding-left: 29px;
+    text-transform: uppercase;
+    background-color: rgb(100, 123, 100);
+    border-color: transparent;
+    color: rgb(254, 254, 254);
+    border-radius: 2px;
+    background-image: url(images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 306px;
+}
+.second-content-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 78px;
+    margin-right: 177px;
+}
+.right-img1 {
+    background-color:rgb(100, 123, 100);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.right-img {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.right-one {
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 27px;
+    padding-bottom: 45px;
+    border-radius: 8px;
+}
+.right-two,
+.right-three,
+.right-four {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 27px;
+        padding-bottom: 45px;
+        border-radius: 8px;
+}
+.right-title span {
+    font-weight: bold;
+}
+.right-content {
+    font-size: 13px;
+}
+
+
+
+
+
+.third-content {
+    margin-top: 147px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.third-content-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.third-content-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 41px;
+}
+.third-content-options {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 338px;
+    gap: 50px;
+    margin-top: 56px;
+    justify-content: center;
+}
+.third-content-opt-one,
+.third-content-opt-two,
+.third-content-opt-three {
+    padding-top: 78px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.third-content-opt-one,
+.third-content-opt-three{
+    background-color: white;
+}
+
+.third-content-opt-two {
+    background-color: rgb(100, 123, 100);
+    color: white;
+}
+.third-content-icon {
+    display: block;
+    margin-bottom: 24px;
+}
+.option-title {
+    text-transform: uppercase;
+    line-height: 116%;
+}
+.option-content {
+    line-height: 132%;
+    letter-spacing: 4%;
+}
+
+
+.fourth-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 171px;
+    margin-left: 140px;
+}
+.fourth-right {
+    margin-right: 160px;
+}
+
+.fourth-content-header {
+    color:rgb(243, 181, 98);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.fourth-content-title {
+    color: rgb(100, 123, 100);
+    font-size: 41px;
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+.fourth-content-content {
+    line-height: 132%;
+    letter-spacing: 4%;
+    margin-top: 24px;
+}
+.fourth-button {
+    width: 350px;
+    height: 73px;
+    text-align: left;
+    padding-left: 29px;
+    text-transform: uppercase;
+}
+.fifth-content {
+    margin-right: 140px;
+}
+.fifth-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 140px;
+    margin-top: 197px;
+}
+.fifth-content-header {
+    color:rgb(243, 181, 98);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.fifth-content-title {
+    color: rgb(100, 123, 100);
+    font-size: 41px;
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+.fifth-content-img {
+    width: 142px;
+}
+.fifth-content-bot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 140px;
+    margin-bottom: 172px;
+    gap: 40px;
+}
+
+.fifth-content-opt-one,
+.fifth-content-opt-two,
+.fifth-content-opt-three {
+    display: flex;
+    flex-wrap: wrap;
+}
+.opt-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: rgb(240, 220, 197);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 97px;
+}
