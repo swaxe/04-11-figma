@@ -1,15 +1,29 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     background-color: rgb(229, 229, 229);
-    margin: 0;
+    background-image: url(images/Ellipse\ 119.svg),
+    url(images/Rectangle\ 491.svg);
+    background-repeat: no-repeat;
+    background-position-x: 0px, 0px;
+    background-position-y: 550px, 800px;
+}
+.container {
+    max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 header {
     display: flex;
-    justify-content: space-between;
-    margin-left: 140px;
+    justify-content: space-evenly;
+    width: 90%;
     margin-top: 50px;
-    margin-right: 140px;
+
+}
+.header-image {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .header-options {
     display: flex;
@@ -40,7 +54,11 @@ li a {
 }
 .main-left {
     align-self: center;
-    width: 495px
+    width: 495px;
+    background-image: url(images/Ellipse\ 116.svg);
+    background-repeat: no-repeat;
+    background-position-x: 155px;
+    background-position-y: 10px;
 }
 .main-content-header {
     line-height: 116%;
@@ -52,8 +70,10 @@ li a {
     text-align: left;
 }
 .main-right {
-    margin-left: 238px;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .main-content-button {
     width: 350px;
     height: 73px;
@@ -74,14 +94,13 @@ li a {
     grid-template-rows: 1fr;
     gap: 109px;
     margin-top: 141px;
-
 }
 .second-content-left {
     margin-left: 140px;
     width: 412px;
 }
 .second-fade {
-    background-image: linear-gradient(rgb(255, 229, 210),rgb(229, 229, 229));
+    /*background-image: linear-gradient(rgb(255, 229, 210),rgb(229, 229, 229)); */
 }
 .second-content-header {
     color:rgb(243, 181, 98);
@@ -94,7 +113,6 @@ li a {
     text-transform: uppercase;
     margin-top: 17px;
 }
-
 .second-content-content {
     font-size: 16px;
     line-height: 132%;
@@ -120,7 +138,6 @@ li a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 78px;
-    margin-right: 177px;
 }
 .right-img1 {
     background-color:rgb(100, 123, 100);
@@ -159,8 +176,6 @@ li a {
 }
 .third-content {
     margin-top: 147px;
-    margin-left: 140px;
-    margin-right: 140px;
 }
 .third-content-header {
     text-align: center;
@@ -176,7 +191,7 @@ li a {
 }
 .third-content-options {
     display: grid;
-    grid-template-columns: 360px 360px 360px;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 338px;
     gap: 50px;
     margin-top: 56px;
@@ -189,12 +204,12 @@ li a {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 8px;
+    overflow: hidden;
 }
 .third-content-opt-one,
 .third-content-opt-three{
-    background-color: white;
+    background: linear-gradient(180deg, rgba(240,240,240,1) 40%, rgba(100,123,100,1) 300%);
 }
-
 .third-content-opt-two {
     background-color: rgb(100, 123, 100);
     color: white;
@@ -211,15 +226,11 @@ li a {
     line-height: 132%;
     letter-spacing: 4%;
 }
-
-
 .fourth-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 171px;
-    margin-left: 140px;
-    margin-right: 160px;
     justify-content: space-around;
     gap: 165px;
 }
@@ -268,13 +279,11 @@ li a {
 }
 .fifth-content {
     margin-top: 197px;
-    margin-right: 140px;
 }
 .fifth-content-top {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-left: 140px;
 
 }
 .fifth-content-header {
@@ -294,7 +303,6 @@ li a {
 .fifth-content-bot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 140px;
     margin-bottom: 172px;
     gap: 40px;
 }
@@ -332,8 +340,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-top: 100px;
-    padding-left: 140px;
-    padding-right: 140px;
     padding-bottom: 97px;
     gap: 60px;
 }
@@ -416,15 +422,19 @@ footer {
     background-size: 17px 12px;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1260px) {
     header {
         background-image: url(images/Icon.png);
         background-repeat: no-repeat;
-        background-position: 860px;
+        background-position: 100%;
         margin-right: 0;
     }
     .header-menu {
         visibility:hidden
+    }
+    .main-right {
+        position: relative;
+        margin-right: -200px;
     }
     .second-content {
         grid-template-columns: 1fr;
@@ -435,9 +445,6 @@ footer {
     }
     .second-content-content {
         width: 100%;
-    }
-    .second-content-right {
-        margin-left: 177px;
     }
     .third-content-options {
         justify-content: normal;
@@ -480,5 +487,18 @@ footer {
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background-position-x: -100px, 0px;
+        background-position-y: 400px, 800px;
+    }
+    .main-right {
+        z-index: -1;
+    }
+    .tennis {
+        position: relative;
+        right: -0px;
     }
 }
