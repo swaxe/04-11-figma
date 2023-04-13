@@ -297,7 +297,11 @@ li a {
     text-transform: uppercase;
     margin-top: 17px;
 }
-.fifth-content-img {
+.fifth-content-img1 {
+    width: 28px;
+    margin-bottom: 70px;
+}
+.fifth-content-img2 {
     width: 142px;
 }
 .fifth-content-bot {
